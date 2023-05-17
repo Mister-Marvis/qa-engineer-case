@@ -1,4 +1,4 @@
-import { Dispatch, FunctionComponent, SetStateAction } from "react";
+import {ChangeEventHandler, Dispatch, FunctionComponent, SetStateAction} from "react";
 import { TodoItem } from "@/types/todo";
 
 interface ListItemProps {
@@ -12,10 +12,23 @@ const TodoListItem: FunctionComponent<ListItemProps> = ({
   setTodoItems,
   index,
 }) => {
+  const handleChange: ChangeEventHandler<HTMLInputElement> =  () => {
+    setTodoItems((items) => {
+      if (items) {
+        items[index].done = !items[index].done;
+        console.log('chnage', [...items]);
+
+        return [...items]
+      }
+
+      return []
+    })
+  }
+
   return (
     <label className="flex cursor-pointer items-center">
-      <input defaultChecked={done} type="checkbox" className="mr-3" />
-      <span className={done ? "line-through" : ""}>{text}</span>
+      <input defaultChecked={done} onChange={handleChange} type="checkbox" className="mr-4" />
+      <span className={done ? "line-through opacity-50" : ""}>{text}</span>
     </label>
   );
 };
