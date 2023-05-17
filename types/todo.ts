@@ -1,4 +1,4 @@
 export type TodoItem = {
-  done: boolean;
-  text: string;
-};
+  done: boolean
+  text: string
+}
