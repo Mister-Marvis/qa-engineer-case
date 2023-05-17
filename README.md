@@ -8,7 +8,7 @@ This is a [Next.js](https://nextjs.org/) todo app.
 2. Create at least 2 unit tests.
 3. Implement [Cypress](https://www.cypress.io/).
 4. Create at least 2 E2E tests.
-5. Create `qa.md` that contains at least 3 potential suggestions to improve _quality_.
+5. Create `qa.md` that contains at least 5 potential suggestions to improve _quality_.
    - Code quality or any other suggestions to reduce potential bugs and increase confidence in releases.
 
 ## Deliverable
