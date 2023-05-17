@@ -9,12 +9,12 @@ This is a [Next.js](https://nextjs.org/) todo app.
 3. Implement [Cypress](https://www.cypress.io/).
 4. Create at least 2 E2E tests.
 5. Create `qa.md` that contains at least 3 potential suggestions to improve _quality_.
-   - Code quality or any other suggestions to reduce potential bugs and increase confidence in changes.
+   - Code quality or any other suggestions to reduce potential bugs and increase confidence in releases.
 
 ## Deliverable
 
 - Use TypeScript.
-- Ensure it's easy for your collegue to run the tests.
+- Ensure it's easy for your colleagues to run the tests.
 - A ZIP file with the source code. Send it over per email. Please do _not_ put the results on GitHub, BitBucket, etc.
 
 ## Notes
