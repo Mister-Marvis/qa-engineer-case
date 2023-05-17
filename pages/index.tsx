@@ -29,7 +29,7 @@ export default function Home() {
           />
           <div className='z-20 mx-auto grid w-full max-w-xl gap-6'>
             <TodoList setTodoItems={setTodoItems} todoItems={todoItems || []} />
-            <Add setTodoItems={setTodoItems} />
+            <Add setTodoItems={setTodoItems} todoItems={todoItems || []} />
           </div>
         </article>
       </main>
