@@ -7,14 +7,14 @@ interface ListItemProps {
   index: number;
 }
 
-const ListItem: FunctionComponent<ListItemProps> = ({
+const TodoListItem: FunctionComponent<ListItemProps> = ({
   item: { done, text },
   setTodoItems,
   index,
 }) => {
   return (
     <label className="flex cursor-pointer items-center">
-      <input checked={done} type="checkbox" className="mr-3" />
+      <input defaultChecked={done} type="checkbox" className="mr-3" />
       <span className={done ? "line-through" : ""}>{text}</span>
     </label>
   );
@@ -37,7 +37,7 @@ const TodoList: FunctionComponent<TodoListProps> = ({
       {todoItems.length > 0 && (
         <div className="space-y-4">
           {todoItems.map((item, index) => (
-            <ListItem
+            <TodoListItem
               key={index}
               index={index}
               item={item}
