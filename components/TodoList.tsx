@@ -13,8 +13,8 @@ const ListItem: FunctionComponent<ListItemProps> = ({
   index,
 }) => {
   return (
-    <label className="flex items-center cursor-pointer">
-      <input defaultChecked={done} type="checkbox" className="mr-3" />
+    <label className="flex cursor-pointer items-center">
+      <input checked={done} type="checkbox" className="mr-3" />
       <span className={done ? "line-through" : ""}>{text}</span>
     </label>
   );
@@ -30,7 +30,7 @@ const TodoList: FunctionComponent<TodoListProps> = ({
   setTodoItems,
 }) => {
   return (
-    <div className="group rounded-lg border border-transparent px-6 py-4 transition-colors bg-neutral-300/30 dark:bg-neutral-800/30">
+    <div className="group rounded-lg border border-transparent bg-neutral-300/30 px-6 py-4 transition-colors dark:bg-neutral-800/30">
       {todoItems.length === 0 && (
         <span className="opacity-50">No items in list</span>
       )}
