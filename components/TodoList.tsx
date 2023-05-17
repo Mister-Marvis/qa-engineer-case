@@ -21,7 +21,7 @@ const TodoListItem: FunctionComponent<ListItemProps> = ({ item, setTodoItems, in
   }
 
   return (
-    <li data-index={index}>
+    <li>
       <label className='flex cursor-pointer items-center'>
         <input defaultChecked={item.done} onChange={() => handleChange(item, index)} type='checkbox' className='mr-4' />
         <span className={item.done ? 'line-through opacity-50' : ''}>{item.text}</span>

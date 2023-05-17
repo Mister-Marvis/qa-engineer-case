@@ -31,7 +31,7 @@ const Add: FunctionComponent<Props> = ({ setTodoItems }) => {
         onChange={({ target }) => setTodoItem(target.value)}
         type='text'
         placeholder='Todo...'
-        className='block w-full rounded-md border-0 px-3 py-2 text-neutral-900 shadow-sm ring-1 ring-inset ring-neutral-300 placeholder:text-neutral-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 dark:bg-neutral-950 dark:text-neutral-50 dark:focus:aring-neutral-800 dark:ring-neutral-800'
+        className='dark:focus:aring-neutral-800 block w-full rounded-md border-0 px-3 py-2 text-neutral-900 shadow-sm ring-1 ring-inset ring-neutral-300 placeholder:text-neutral-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 dark:bg-neutral-950 dark:text-neutral-50 dark:ring-neutral-800'
         required={true}
         minLength={3}
         maxLength={100}
